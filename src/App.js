@@ -73,7 +73,7 @@ function App() {
         <div className="header-text">ravenous</div>
       </header>
       <main>
-        <SearchBar />
+        <SearchBar setResults={setResults} />
         <BusinessList results={results} />
       </main>
       <footer>
