@@ -2,7 +2,7 @@ function Business({ business }) {
 
     return (
         <div className="Business" >
-            <img src={business.imageSrc} />
+            <img src={business.imageSrc} alt={business.name} />
             <div className="business-name">{business.name}</div>
             <div className="left">
                 <div>{business.address}</div>
