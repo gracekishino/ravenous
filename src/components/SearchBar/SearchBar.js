@@ -1,7 +1,9 @@
+import styles from "./SearchBar.module.css";
+
 function SearchBar() {
     return (
-        <div id="SearchBar">
-            <div id="search-nav">
+        <div id={styles.SearchBar}>
+            <div id={styles.searchNav}>
                 <a href="/">Best<br />Matched</a>
                 <a href="/">Highest<br />Rated</a>
                 <a href="/">Best<br />Reviewed</a>

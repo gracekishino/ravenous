@@ -1,0 +1,61 @@
+
+#SearchBar {
+    padding: 5rem 0;
+    background: url("./search-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    min-width: 370px;
+  }
+  
+  #searchNav {
+    display: flex;
+    flex: 1 1 1;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #searchNav a, button { 
+    margin: 1rem;
+    background-color: #906328;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.72rem 1.7rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.5s;
+  }
+
+  #searchNav a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  button:hover,   #searchNav a:hover {
+    background-color: #a7874b;
+    cursor: pointer;
+  }
+  
+  input {
+    width: 21rem;
+    padding: 0.66rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+
+@media only screen and (max-width: 560px) {
+  input {
+    width: 15rem;
+  }
+}

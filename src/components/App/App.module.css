@@ -1,0 +1,38 @@
+html {
+  font-size: 18px;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+header h1 {
+  padding: 1rem 0 1.4rem 0;
+  text-align: center;
+  background-color: #906328;
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+a {
+  color: #906328;
+}
+
+footer {
+  padding: 10px;
+  background-color: #906328;
+  color: white;
+
+}
+
+footer a {
+  color: white;
+}

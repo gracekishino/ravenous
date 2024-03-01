@@ -1,8 +1,9 @@
-import Business from "./Business"
+import Business from "../Business/Business";
+import styles from "./BusinessList.module.css";
 
 function BusinessList({ results }) {
     return (
-        <div className="Business-list">
+        <div className={styles.list}>
             {results.map((business) => (
                 <Business business={business} />
             ))}

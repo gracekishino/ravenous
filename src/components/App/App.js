@@ -1,7 +1,7 @@
 import { useState } from "react";
-import './App.css';
-import BusinessList from "./components/BusinessList"
-import SearchBar from "./components/SearchBar"
+import './App.module.css';
+import BusinessList from "../BusinessList/BusinessList"
+import SearchBar from "../SearchBar/SearchBar"
 
 function App() {
   const [ results, setResults ] = useState([
@@ -70,7 +70,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div className="header-text">ravenous</div>
+        <h1>ravenous</h1>
       </header>
       <main>
         <SearchBar setResults={setResults} />

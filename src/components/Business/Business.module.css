@@ -1,0 +1,41 @@
+.business {
+    width: 16rem;
+    margin: 1.1rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .business img {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+  }
+  
+  .left {
+    float: left;
+    text-align: left;
+  }
+  
+  .right {
+    float: right;
+    text-align: right;
+  }
+  
+  .name {
+    font-weight: bold;
+    padding: 0.3rem 0;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  
+  .category {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #906328;
+  }
+  
+  .rating {
+    font-weight: bold;
+    color: #906328;
+  }
+  
