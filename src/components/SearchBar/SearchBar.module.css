@@ -8,15 +8,28 @@
     opacity: 0.9;
     min-width: 370px;
   }
-  
+
   #searchNav {
     display: flex;
-    flex: 1 1 1;
-    flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
   }
   
-  #searchNav a, button { 
+  #searchNav li {
+    width: 4.33rem;
+    padding: 0.7rem;
+    line-height: 1.15;
+    text-align: center;
+    font-size: 0.9rem;
+    list-style: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #3C9151;
+    margin: 0 1rem;
+    transition: background-color 0.5s;
+  }
+  
+button { 
     margin: 1rem;
     background-color: #906328;
     color: white;
@@ -27,15 +40,12 @@
     font-weight: bold;
     transition: background-color 0.5s;
   }
-
-  #searchNav a {
-    font-size: 0.9rem;
-    text-decoration: none;
-    font-weight: normal;
-  }
   
-  button:hover,   #searchNav a:hover {
-    background-color: #a7874b;
+  #searchNav li.active,
+  #searchNav li.active:hover, 
+  #searchNav li:hover, 
+  button:hover {
+    background-color: #A682D8;
     cursor: pointer;
   }
   
