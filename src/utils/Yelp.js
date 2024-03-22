@@ -9,16 +9,7 @@ const options = {
 };
   
 const getBusinesses = async (location, term, sortBy) => {
-    const endpoint = `https://api.yelp.com/v3/businesses/search?location=${location}&term=${term}&sort_by=${sortBy}&limit=20`;
-
-    const response = await fetch(endpoint, options)
-    .then(response => response.json())
-    .catch(err => {
-        console.error(err);
-        return {"businesses": []};
-    });
-    
-    return await response;
+    return {"businesses": []};
 }
 
 export { getBusinesses };
