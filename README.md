@@ -13,13 +13,16 @@ From the command line, navigate to the project directory and run:
 
 ### `npm install`
 
+Then install and setup Netlify CLI 
+https://docs.netlify.com/cli/get-started/
+
 ## Usage
 
 To run the app in development mode, from the command line navigate to the project directory and run:
 
-### `npm start`
+### `netlify dev`
 
-Open http://localhost:3000 to view it in your browser.
+Open http://localhost:8888 to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
