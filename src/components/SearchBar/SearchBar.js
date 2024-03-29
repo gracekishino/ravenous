@@ -7,31 +7,17 @@ const sortByOptions = {
     "Most Reviewed": "review_count",
 }
 
-// mock data
-const business2 = {
-    imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
-    name: ' Pizzeria Ciro',
-    address: 'Ginza Dori',
-    city: 'Tokyo',
-    state: 'TY',
-    zipCode: '1690074',
-    category: 'Italian',
-    rating: 5,
-    reviewCount: 90
-};
-
-function SearchBar({ setResults }) {
+function SearchBar({ setResults, getBusinesses }) {
 
     const [ sortByOption, setSortByOption ] = useState("rating");
     const [ searchText, setSearchText ] = useState('');
     const [ searchLocation, setSearchLocation ] = useState('');
   
-    const doSearch = () => {
+    const doSearch = async () => {
       if (searchText !== '' || searchLocation !=='') {
-        // TODO request results from yelp API
-        console.log(`option: ${sortByOption} text: ${searchText} location: ${searchLocation}`)
-        const yelpResults = [business2, business2, business2, business2, business2, business2];
-        setResults(yelpResults); 
+
+        const yelpResults = await getBusinesses(searchLocation, searchText, sortByOption);
+        setResults(yelpResults.businesses); 
       }  
     }
     
@@ -61,10 +47,12 @@ function SearchBar({ setResults }) {
                 {renderSortByOptions()}
             </ul>
             <input 
+                id="searchInput"
                 onChange={handleSearchTextChange}
                 placeholder="Search businesses" 
                 aria-label="Search businesses"  />
             <input 
+                id="whereInput"
                 onChange={HandleSearchLocationChange}
                 placeholder="Where?" 
                 aria-label="Where?"  />

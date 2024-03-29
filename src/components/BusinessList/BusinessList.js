@@ -4,7 +4,7 @@ import styles from "./BusinessList.module.css";
 function BusinessList({ results }) {
     return (
         <div className={styles.list}>
-            {results.map((business, index) => (
+            {Array.isArray(results) && results?.map((business, index) => (
                 <Business business={business} key={index} />
             ))}
         </div>
